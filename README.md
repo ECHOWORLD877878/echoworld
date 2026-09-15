@@ -1,45 +1,36 @@
-# ECHO//WORLD
+# ECHO//WORLD — 10 CLUB EDITION
 
-A high-quality blue/white interactive club-network map prototype.
+Each map dot has its **own profile file** inside `clubs/`. You do NOT need to edit a giant list in `app.js`.
 
-## Run it
-
-Open `index.html` in a browser, or use the Live Server extension in VS Code/Codespaces.
-
-## Customize your URIs
-
-Open `app.js` and edit:
+Example `clubs/02_Astra_Union.js`:
 
 ```js
-const CONFIG = {
-  worldBackgroundURI: "YOUR_MAP_BACKGROUND_URL",
-  customClubs: {
-    "Hon's_Family": {
-      backgroundURI: "YOUR_HONS_PROFILE_IMAGE_URL"
-    }
-  }
+export default {
+  name:"My_Club",
+  people:50000,
+  active:7200,
+  color:"#25c8ff",
+  backgroundURI:"YOUR IMAGE URI",
+  hoverText:"What appears when people hover.",
+  wiki:"The full wiki description.",
+  x:500,
+  y:-300,
+  tags:["Example","Tag"]
 };
 ```
 
-There is also a small URI control at the top-left of the map: hover over it to reveal the fields and apply URLs without editing code.
+Edit the values in that one file and that one dot changes.
 
-## What is included
+### Files
+- `clubs/01_Hons_Family.js`
+- `clubs/02_Astra_Union.js`
+- `clubs/03_Hollow_Circle.js`
+- `clubs/04_Neon_House.js`
+- `clubs/05_Velvet_Order.js`
+- `clubs/06_Night_Collective.js`
+- `clubs/07_Silver_Guild.js`
+- `clubs/08_Crimson_Family.js`
+- `clubs/09_Static_Society.js`
+- `clubs/10_Ghost_Network.js`
 
-- ECHO//WORLD title + LIVE badge
-- Full-screen dark map with blue/white glow
-- 3,000 generated clubs
-- Drag / pan in every direction
-- Scroll-wheel zoom centered around the cursor
-- Animated network connections
-- Hover cards showing people, activity and live distance
-- Click/double-click to focus a club and open its wiki profile
-- Side profile UI with custom club image, people, active count, wiki and tags
-- Distance changes as the map vector moves
-- Opening family gate
-- `Hon's_Family` focuses immediately on the largest club: 670K people / 100K active
-- Search box
-- Responsive layout
-
-## Important
-
-The 3,000 clubs are demo-generated. Replace `customClubs` / the generation section with your real club database when you connect a backend.
+The map still has 10 slowly drifting locations, smooth dragging, zooming, connections, hover UI, wiki panels, and the built-in profile editor.
