@@ -1,36 +1,24 @@
-# ECHO//WORLD — 10 CLUB EDITION
+# ECHO//WORLD — Launch Ready
 
-Each map dot has its **own profile file** inside `clubs/`. You do NOT need to edit a giant list in `app.js`.
+## In GitHub Codespaces
 
-Example `clubs/02_Astra_Union.js`:
+1. Open the **ECHO_FIX** folder in the Explorer.
+2. Open the **Terminal**.
+3. Run:
 
-```js
-export default {
-  name:"My_Club",
-  people:50000,
-  active:7200,
-  color:"#25c8ff",
-  backgroundURI:"YOUR IMAGE URI",
-  hoverText:"What appears when people hover.",
-  wiki:"The full wiki description.",
-  x:500,
-  y:-300,
-  tags:["Example","Tag"]
-};
+```bash
+npm start
 ```
 
-Edit the values in that one file and that one dot changes.
+4. Codespaces will show port **8080**.
+5. Click **Open in Browser**.
 
-### Files
-- `clubs/01_Hons_Family.js`
-- `clubs/02_Astra_Union.js`
-- `clubs/03_Hollow_Circle.js`
-- `clubs/04_Neon_House.js`
-- `clubs/05_Velvet_Order.js`
-- `clubs/06_Night_Collective.js`
-- `clubs/07_Silver_Guild.js`
-- `clubs/08_Crimson_Family.js`
-- `clubs/09_Static_Society.js`
-- `clubs/10_Ghost_Network.js`
+If Codespaces does not show the port automatically, open the **PORTS** tab at the bottom, choose port `8080`, then click the globe/open icon.
 
-The map still has 10 slowly drifting locations, smooth dragging, zooming, connections, hover UI, wiki panels, and the built-in profile editor.
+### Important
+
+Do not use the Source Control panel to launch the website. Source Control is only for Git/GitHub.
+
+You can also install the VS Code **Live Server** extension and right-click `index.html` → **Open with Live Server**.
+
+The site is a static HTML/CSS/JavaScript app and needs a local web server because it loads the individual club `.js` files as ES modules.
