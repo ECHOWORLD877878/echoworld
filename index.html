@@ -1,101 +1,101 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#06101f">
-  <title>ECHO//WORLD — Club atlas</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECHO//WORLD</title>
+  <meta name="description" content="ECHO//WORLD — an interactive club world map." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="app-shell">
-    <div class="grain"></div>
-    <header class="topbar">
-      <div class="brand-lockup">
-        <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
-        <div>
-          <div class="brand-name">ECHO<span>//</span>WORLD</div>
-          <div class="brand-subtitle">A living atlas of collective signal</div>
-        </div>
-        <div class="live-badge"><i></i> LIVE ATLAS</div>
+  <div id="warning" class="warning-screen">
+    <div class="warning-grid"></div>
+    <div class="warning-card">
+      <div class="eyebrow">ECHO//WORLD · ACCESS GATE</div>
+      <h1>HOLD UP<br><span>BEFORE YOU START</span></h1>
+      <p>Enter the family name you're in. Your world view will lock onto that family's location.</p>
+      <div class="input-wrap">
+        <span>FAMILY://</span>
+        <input id="familyInput" autocomplete="off" spellcheck="false" placeholder="Type your family name…" />
       </div>
-      <div class="topbar-actions">
-        <div class="coordinates"><span>YOU ARE HERE</span><strong id="topCoordinates">04.87° N&nbsp;&nbsp; 118.21° W</strong></div>
-        <button class="icon-button" id="recenterButton" aria-label="Recenter map" title="Recenter map">⌖</button>
-        <button class="avatar-button" aria-label="Open account">AE</button>
-      </div>
-    </header>
-
-    <main class="atlas-stage" id="atlasStage">
-      <div class="map-viewport" id="mapViewport" aria-label="Interactive club map" tabindex="0">
-        <div class="map-world" id="mapWorld">
-          <div class="nebula nebula-one"></div><div class="nebula nebula-two"></div><div class="nebula nebula-three"></div>
-          <div class="constellation constellation-one"></div><div class="constellation constellation-two"></div>
-          <div class="map-grid"></div>
-          <div class="user-orbit"><div class="user-pulse"></div><div class="user-core"></div><span>YOU</span></div>
-          <div class="map-label map-label-one">NORTH ARC <span>07</span></div>
-          <div class="map-label map-label-two">THE LOWLANDS <span>12</span></div>
-          <div class="map-label map-label-three">PACIFIC RIM <span>04</span></div>
-          <div id="clubLayer"></div>
-        </div>
-      </div>
-
-      <aside class="left-rail panel-glass">
-        <div class="rail-label">ATLAS PULSE <span class="signal-line"></span></div>
-        <div class="pulse-number" id="pulseNumber">68.4<span>%</span></div>
-        <div class="pulse-caption">worldwide activity</div>
-        <div class="metric-list">
-          <div class="metric-row"><span>CLUBS INDEXED</span><strong>3,000</strong></div>
-          <div class="metric-row"><span>PEOPLE IN ORBIT</span><strong>18.7M</strong></div>
-          <div class="metric-row"><span>ACTIVE NOW</span><strong class="cyan-text"><i></i> 2.4M</strong></div>
-        </div>
-        <div class="legend">
-          <div><span class="dot dot-hot"></span>high signal</div>
-          <div><span class="dot dot-warm"></span>rising</div>
-          <div><span class="dot dot-cool"></span>quiet orbit</div>
-        </div>
-        <div class="rail-footer">LAST SYNC <strong>00:04:12</strong></div>
-      </aside>
-
-      <div class="map-controls panel-glass">
-        <button id="zoomIn" aria-label="Zoom in">+</button><span></span><button id="zoomOut" aria-label="Zoom out">−</button>
-      </div>
-      <div class="drag-hint"><span class="drag-icon">✣</span> DRAG TO EXPLORE <span class="drag-rule"></span> SCROLL TO ZOOM</div>
-
-      <aside class="club-panel panel-glass" id="clubPanel" aria-live="polite">
-        <div class="panel-topline"><span>CLUB PROFILE <b id="clubRank">01 / 3,000</b></span><button class="close-detail" id="closeDetail" aria-label="Close club profile">×</button></div>
-        <div class="club-cover" id="clubCover"><div class="cover-shade"></div><span id="clubTag">LARGEST SIGNAL</span></div>
-        <div class="club-heading"><div><h1 id="clubName">Hon's Family</h1><p id="clubLocation">Pacific Rim · 4,821 km away</p></div><div class="verified">✦</div></div>
-        <div class="club-metrics"><div><strong id="clubPeople">670K</strong><span>people</span></div><div><strong id="clubActive">100K</strong><span>active now</span></div><div><strong id="clubDistance">4,821</strong><span>km away</span></div></div>
-        <div class="panel-divider"></div>
-        <div class="wiki-label">FIELD NOTE <span>WIKI / 01</span></div>
-        <p class="club-wiki" id="clubWiki">A high-orbit family built around the quiet exchange of ideas, ritual, and radical hospitality. Hon's signal reaches furthest at dusk, when thousands gather to leave a trace for the next person.</p>
-        <button class="wiki-button">OPEN FULL WIKI <span>↗</span></button>
-        <div class="panel-bottom"><span><i></i> signal stable</span><span id="clubUpdated">updated 2m ago</span></div>
-      </aside>
-    </main>
-
-    <footer class="statusbar"><div><span class="status-dot"></span> NETWORK ONLINE</div><div class="status-center">ECHO PROTOCOL <span>v.2.04</span></div><div>DRAG / SCROLL <span class="footer-key">⌘</span></div></footer>
+      <button id="enterBtn">ENTER WORLD <span>↗</span></button>
+      <div id="warningError" class="warning-error"></div>
+      <div class="hint">Demo family: <b>Hon's_Family</b></div>
+    </div>
   </div>
 
-  <section class="welcome-modal" id="welcomeModal" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
-    <div class="welcome-glow"></div>
-    <div class="welcome-content">
-      <div class="modal-eyebrow"><span class="eyebrow-line"></span> ACCESS PROTOCOL 01 <span class="eyebrow-line"></span></div>
-      <h2 id="welcomeTitle">HOLD UP<br><em>BEFORE YOU START.</em></h2>
-      <p>Every collective leaves a signal. Tell us which family you carry, and we’ll tune the atlas to your frequency.</p>
-      <form id="familyForm">
-        <label for="familyInput">YOUR FAMILY NAME</label>
-        <div class="input-wrap"><span>/</span><input id="familyInput" autocomplete="off" placeholder="e.g. Hon's_Family" autofocus><span class="input-cursor"></span></div>
-        <button type="submit" class="enter-button">ENTER THE ATLAS <span>↗</span></button>
-      </form>
-      <button class="wander-button" id="wanderButton">I'M JUST WANDERING <span>→</span></button>
-      <div class="modal-footer"><span>PRIVATE BY DEFAULT</span><span>3,000 CLUBS / ONE WORLD</span></div>
+  <main id="app" class="app hidden">
+    <header class="topbar glass">
+      <div class="brand">
+        <div class="brand-mark">E</div>
+        <div>
+          <div class="brand-title">ECHO<span>//</span>WORLD <b id="titleBadge">LIVE</b></div>
+          <div class="brand-sub">CONNECTED CLUB NETWORK · <span id="clubCount">3,000</span> LOCATIONS</div>
+        </div>
+      </div>
+      <div class="top-stats">
+        <div><span>NETWORK</span><strong>ONLINE</strong></div>
+        <div><span>CLUBS</span><strong id="statClubs">3,000</strong></div>
+        <div><span>PEOPLE</span><strong id="statPeople">38.4M</strong></div>
+      </div>
+      <button id="resetBtn" class="icon-btn" title="Recenter">◎</button>
+    </header>
+
+    <section id="mapStage" class="map-stage">
+      <div id="mapBackground" class="map-background"></div>
+      <canvas id="mapCanvas"></canvas>
+      <div class="map-vignette"></div>
+      <div id="hoverCard" class="hover-card"></div>
+
+      <div class="hud left-hud glass">
+        <div class="hud-title"><span class="pulse"></span> WORLD FEED</div>
+        <div class="hud-line">DRAG TO MOVE</div>
+        <div class="hud-line">SCROLL TO ZOOM</div>
+        <div class="hud-line">HOVER A CLUB TO SCAN</div>
+        <div class="hud-line">CLICK TO OPEN WIKI</div>
+      </div>
+
+      <div class="hud right-hud glass">
+        <div class="hud-title">YOUR VECTOR</div>
+        <div class="vector-value" id="vectorDistance">12 KM</div>
+        <div class="vector-caption">FROM SELECTED CLUB</div>
+        <div class="vector-rule"></div>
+        <div class="coords" id="coords">X 0000 · Y 0000</div>
+      </div>
+
+      <div class="zoom-control glass">
+        <button id="zoomIn">+</button>
+        <button id="zoomReset">•</button>
+        <button id="zoomOut">−</button>
+      </div>
+
+      <div class="bottom-dock glass">
+        <div class="dock-label">
+          <span class="pulse"></span>
+          <span>DISCOVERED</span>
+        </div>
+        <div id="clubPreview" class="club-preview"></div>
+        <div class="dock-search">
+          <span>⌕</span>
+          <input id="searchInput" placeholder="Search clubs…" />
+        </div>
+      </div>
+
+      <aside id="profilePanel" class="profile-panel glass">
+        <button id="closePanel" class="close-btn">×</button>
+        <div id="profileContent"></div>
+      </aside>
+    </section>
+
+    <div class="uri-bar glass">
+      <label>WORLD BACKGROUND URI <input id="worldBgInput" placeholder="Paste image URL…" /></label>
+      <label>SELECTED CLUB IMAGE URI <input id="clubBgInput" placeholder="Paste image URL to apply…" /></label>
+      <button id="applyUris">APPLY</button>
     </div>
-  </section>
+
+    <div id="toast" class="toast"></div>
+  </main>
+
   <script src="app.js"></script>
 </body>
 </html>
