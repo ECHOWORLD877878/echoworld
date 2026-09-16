@@ -1,1 +1,0 @@
-export default {id:10,name:"Ghost_Network",people:9000,active:1200,color:"#76f0ff",backgroundURI:"",hoverText:"A small northern network that moves quietly.",wiki:["Edit the Ghost Network history here."],x:80,y:-1050,tags:["Verified","Gaming","North"]};

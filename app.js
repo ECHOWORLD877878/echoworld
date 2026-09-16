@@ -1,13 +1,9 @@
 import hon from './clubs/01_Hons_Family.js';
 import shadow from './clubs/02_Shadow_Family.js';
-import hollow from './clubs/03_Hollow_Circle.js';
-import neon from './clubs/04_Neon_House.js';
-import velvet from './clubs/05_Velvet_Order.js';
-import night from './clubs/06_Night_Collective.js';
-import silver from './clubs/07_Silver_Guild.js';
-import crimson from './clubs/08_Crimson_Family.js';
-import staticSociety from './clubs/09_Static_Society.js';
-import ghost from './clubs/10_Ghost_Network.js';
+import hollow from './clubs/03_Doctor_Family.js';
+import neon from './clubs/04_The_Knights_Family.js';
+
+
 
 const clubs=[hon,shadow,hollow,neon,velvet,night,silver,crimson,staticSociety,ghost];
 const CONFIG={worldBackgroundURI:'',titleBadge:'LIVE',clubCount:clubs.length};

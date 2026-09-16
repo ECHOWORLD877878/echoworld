@@ -1,1 +1,0 @@
-export default {id:5,name:"Velvet_Order",people:41000,active:6200,color:"#8fd8ff",backgroundURI:"",hoverText:"An established order connected to several major routes.",wiki:["Edit the Velvet Order history here."],x:980,y:430,tags:["Independent","Trade","Outer Ring"]};

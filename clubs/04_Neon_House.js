@@ -1,1 +1,0 @@
-export default {id:4,name:"Neon_House",people:56000,active:8900,color:"#1ce0ff",backgroundURI:"",hoverText:"A highly active house around the western sector.",wiki:["Edit the Neon House history here.","Add another section here."],x:-980,y:510,tags:["Rising","Events","West"]};
