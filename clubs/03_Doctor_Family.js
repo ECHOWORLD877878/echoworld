@@ -11,7 +11,7 @@ export default {
   
 ],
 
-  x:0,
-  y:0,
+  x:760,
+  y:-500,
   tags:["Mild Family","Friend's with the: Hon's_Family/56 More familes.","4 Fatalities","5 Natural causes"],
 };

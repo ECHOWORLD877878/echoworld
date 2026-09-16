@@ -9,7 +9,7 @@ export default {
   "The_Knights's_Family Is known to be the aggressive famile's in the map"
 
   ],
-  x:0,
-  y:0,
+  x:-700,
+  y:650,
   tags:["aggressive_Family","Knights","20 Fatalities","23 Natural causes"],
 };
