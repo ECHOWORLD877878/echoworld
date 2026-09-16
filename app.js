@@ -3,14 +3,13 @@ import shadow from './clubs/02_Shadow_Family.js';
 import hollow from './clubs/03_Doctor_Family.js';
 import neon from './clubs/04_The_Knights_Family.js';
 
+const clubs=[hon,shadow,hollow,neon];
 
-
-const clubs=[hon,shadow,hollow,neon,velvet,night,silver,crimson,staticSociety,ghost];
-const CONFIG={worldBackgroundURI:'',titleBadge:'LIVE',clubCount:clubs.length};
-const canvas=document.getElementById('mapCanvas'),ctx=canvas.getContext('2d');
-const stage=document.getElementById('mapStage'),hoverCard=document.getElementById('hoverCard');
-let W=innerWidth,H=innerHeight,dpr=devicePixelRatio||1;
-let view={x:0,y:0,zoom:.58},dragging=false,moved=false,sx=0,sy=0,ox=0,oy=0,hovered=null,selected=null;
+const CONFIG={
+  worldBackgroundURI:'',
+  titleBadge:'LIVE',
+  clubCount:clubs.length
+};
 
 function resize(){W=innerWidth;H=innerHeight;dpr=devicePixelRatio||1;canvas.width=W*dpr;canvas.height=H*dpr;canvas.style.width=W+'px';canvas.style.height=H+'px';ctx.setTransform(dpr,0,0,dpr,0,0)}
 addEventListener('resize',resize);resize();

@@ -7,7 +7,7 @@ export default {
   hoverText:"The Mild known family network in ECHO//WORLD.",
  "wiki": [
   "The Doctor_Family Is known for Doing bomb raids in the ssml. ",
-  ""
+
   
 ],
 
