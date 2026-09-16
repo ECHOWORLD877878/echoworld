@@ -1,0 +1,1 @@
+export default {id:9,name:"Static_Society",people:17000,active:2100,color:"#35baff",backgroundURI:"",hoverText:"A smaller society with long-range connections.",wiki:["Edit the Static Society history here."],x:1440,y:30,tags:["Independent","Art","East"]};

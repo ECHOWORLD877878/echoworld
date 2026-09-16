@@ -1,0 +1,1 @@
+export default {id:3,name:"Hollow_Circle",people:92000,active:11400,color:"#55a8ff",backgroundURI:"",hoverText:"A quiet network with dense connections.",wiki:["Edit the Hollow Circle history here."],x:720,y:-510,tags:["Legacy","Core","Social"]};

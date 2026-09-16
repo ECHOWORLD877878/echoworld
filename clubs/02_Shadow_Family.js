@@ -1,0 +1,1 @@
+export default {id:2,name:"Shadow_Family",people:184000,active:27300,color:"#6de7ff",backgroundURI:"",hoverText:"A massive connected club with a strong outer network.",wiki:["Edit the Shadow Family history here."],x:-900,y:-420,tags:["Verified","Regional","Blue Line"]};

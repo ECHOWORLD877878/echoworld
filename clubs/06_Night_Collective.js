@@ -1,0 +1,1 @@
+export default {id:6,name:"Night_Collective",people:31000,active:4700,color:"#348cff",backgroundURI:"",hoverText:"A growing collective in the southern network.",wiki:["Edit the Night Collective history here."],x:-350,y:830,tags:["Rising","Music","South"]};

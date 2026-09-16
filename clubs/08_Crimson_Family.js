@@ -1,0 +1,1 @@
+export default {id:8,name:"Crimson_Family",people:22000,active:2800,color:"#5bc5ff",backgroundURI:"",hoverText:"A family network on the far western edge.",wiki:["Edit the Crimson Family history here."],x:-1450,y:40,tags:["Regional","Social","West"]};
