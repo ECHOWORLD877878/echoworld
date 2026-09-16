@@ -51,3 +51,42 @@ button,input{font:inherit}
 .editor{margin-top:20px;padding:14px;border:1px solid rgba(70,211,255,.2);background:rgba(0,118,255,.035)}
 .editor-title{font-size:9px;letter-spacing:.18em;color:#61d9ff;margin-bottom:12px;font-weight:900}.editor label{display:block;font-size:8px;color:#7da4b7;margin:9px 0}.editor input,.editor textarea{display:block;width:100%;margin-top:5px;background:#020a13;border:1px solid rgba(75,208,255,.22);outline:none;color:#dff8ff;padding:8px;font-size:10px;resize:vertical}.editor textarea{min-height:58px}.editor input:focus,.editor textarea:focus{border-color:#38d0ff;box-shadow:0 0 14px rgba(0,183,255,.12)}.editor button{width:100%;height:38px;margin-top:8px;border:1px solid #2dc8ff;background:linear-gradient(100deg,rgba(0,145,255,.55),rgba(0,210,255,.35));color:#dffaff;font-weight:900;font-size:9px;letter-spacing:.14em;cursor:pointer}
 .preview-dot{width:7px;height:7px;border-radius:50%;box-shadow:0 0 10px currentColor;margin-right:6px;display:inline-block}.hover-description{margin-top:8px;color:rgba(180,230,245,.75);font-size:9px;line-height:1.45}.wiki-line{padding:9px 10px;margin:0 0 7px;border-left:2px solid rgba(50,200,255,.55);background:rgba(0,120,220,.045);line-height:1.55}
+
+/* ECHO//WORLD wiki scrolling */
+.profile-panel{
+  height: min(86vh, 820px);
+  max-height: calc(100vh - 80px);
+}
+.profile-content{
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+.profile-body{
+  max-height: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100% - 190px);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(55,207,255,.75) rgba(4,18,30,.65);
+  padding-right: 18px;
+}
+.profile-body::-webkit-scrollbar{width:8px}
+.profile-body::-webkit-scrollbar-track{background:rgba(2,12,22,.75);border-left:1px solid rgba(55,207,255,.08)}
+.profile-body::-webkit-scrollbar-thumb{background:linear-gradient(#39d9ff,#1779bb);border-radius:10px;box-shadow:0 0 12px rgba(34,199,255,.45)}
+.profile-body::-webkit-scrollbar-thumb:hover{background:#62e4ff}
+.wiki{
+  white-space:normal;
+  overflow-wrap:anywhere;
+  line-height:1.75;
+}
+.wiki-entry{
+  position:relative;
+  margin:0 0 12px;
+  padding:11px 13px;
+  border:1px solid rgba(57,205,255,.13);
+  background:rgba(4,30,48,.34);
+  box-shadow:inset 0 0 18px rgba(0,130,255,.025);
+}
+.wiki-entry::before{content:"()<";color:#51dfff;font-weight:900;margin-right:8px}
+.wiki-entry::after{content:">()";color:#51dfff;font-weight:900;margin-left:8px}

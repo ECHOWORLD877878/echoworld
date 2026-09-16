@@ -1,13 +1,21 @@
-# ECHO//WORLD fixed build
+# ECHO//WORLD — SCROLLING WIKI UPDATE
 
-IMPORTANT: keep `index.html`, `styles.css`, `app.js`, and the `clubs` folder together.
+The profile/wiki panel is now a fixed-height panel with its own scroll area.
 
-Each club is a separate file in `clubs/`. Edit only that file. Wiki supports:
+Long wikis no longer push the rest of the profile off-screen.
 
+Wiki arrays are displayed as separate entries:
+
+```js
 wiki: [
-  "First entry.",
-  "Second entry.",
-  "Third entry."
-]
+  "First section.",
+  "Second section.",
+  "Third section."
+],
+```
 
-The app imports all ten files directly, so no manual list needs to be maintained in app.js.
+Each entry is shown as:
+
+`()< First section. >()`
+
+The profile editor accepts one wiki entry per line.
